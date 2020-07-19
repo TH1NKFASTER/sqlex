@@ -1,3 +1,5 @@
-SELECT model, speed, hd 
-FROM PC 
-WHERE ((cd = '24x' or cd = '12x') and (price < 600))
+SELECT model, speed, hd
+  FROM PC
+ WHERE (cd = '24x'
+    OR cd = '12x')
+   AND price < 600
