@@ -1,9 +1,9 @@
 SELECT maker 
-  FROM product 
+  FROM Product 
  WHERE type = 'PC'
   
 EXCEPT
   
 SELECT maker 
-  FROM product 
+  FROM Product 
  WHERE type = 'Laptop'
