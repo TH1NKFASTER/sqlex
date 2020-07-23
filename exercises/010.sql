@@ -1,3 +1,3 @@
-SELECT model, price 
-  FROM printer 
- WHERE price = (SELECT max(price) FROM Printer)
+SELECT model, price
+  FROM printer
+ WHERE price = (SELECT MAX(price) FROM printer)
