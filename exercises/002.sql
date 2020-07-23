@@ -1,3 +1,3 @@
 SELECT DISTINCT maker
-  FROM Product
+  FROM product
  WHERE type = 'Printer'
