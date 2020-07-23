@@ -1,9 +1,7 @@
-SELECT maker 
-  FROM Product 
- WHERE type = 'PC'
-  
-EXCEPT
-  
-SELECT maker 
-  FROM Product 
+SELECT maker
+  FROM product
+ WHERE type = 'PC' EXCEPT
+
+SELECT maker
+  FROM product
  WHERE type = 'Laptop'
