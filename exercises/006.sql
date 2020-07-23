@@ -1,5 +1,5 @@
-SELECT DISTINCT maker, Laptop.speed AS speed
-  FROM Product 
-      INNER JOIN Laptop
-      ON Laptop.model = Product.model 
+SELECT DISTINCT maker, laptop.speed AS speed
+  FROM product
+           INNER JOIN laptop
+           ON laptop.model = product.model
  WHERE hd >= 10
