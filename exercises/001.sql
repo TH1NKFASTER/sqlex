@@ -1,3 +1,3 @@
 SELECT model, speed, hd
-  FROM PC
+  FROM pc
  WHERE price < 500
