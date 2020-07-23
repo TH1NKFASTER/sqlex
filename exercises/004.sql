@@ -1,3 +1,3 @@
-SELECT * 
-  FROM Printer 
+SELECT *
+  FROM printer
  WHERE color = 'y'
