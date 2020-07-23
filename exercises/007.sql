@@ -1,21 +1,21 @@
-SELECT DISTINCT Product.model AS model, price
-  FROM Product
-      INNER JOIN PC
-      ON Product.model = PC.model
+SELECT DISTINCT product.model AS model, price
+  FROM product
+           INNER JOIN pc
+           ON product.model = pc.model
  WHERE maker LIKE '%B%'
 
-UNION
+ UNION
 
-SELECT DISTINCT Product.model AS model, price
-  FROM Product
-      INNER JOIN Laptop
-      ON Product.model = Laptop.model
-WHERE maker LIKE '%B%'
+SELECT DISTINCT product.model AS model, price
+  FROM product
+           INNER JOIN laptop
+           ON product.model = laptop.model
+ WHERE maker LIKE '%B%'
 
-UNION
+ UNION
 
-SELECT DISTINCT Product.model AS model, price
-  FROM Product
-      INNER JOIN Printer
-      ON Product.model = Printer.model
+SELECT DISTINCT product.model AS model, price
+  FROM product
+           INNER JOIN printer
+           ON product.model = printer.model
  WHERE maker LIKE '%B%'
